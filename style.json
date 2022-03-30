@@ -1,0 +1,167 @@
+{
+	"QMainWindow":[
+		{
+			"tittle":"Frida Lab Automation",
+			"icon":":/image/logo.png",
+			"frameless": true,
+			"transluscentBg": true,
+			"sizeGrip": "sizeGrip",
+			"navigation":[
+				{
+					"minimize":"minimize_window_button",
+					"close": "close_window_button",
+					"restore":[
+						{	
+							"buttonName": "restore_window_button",
+							"normalIcon": ":/icons/icons/square.svg",
+							"maximizedIcon": ":/icons/icons/copy.svg"
+						}
+					],
+					"moveWindow": "headerContainer",
+					"tittleBar": "headerContainer"
+				}
+			]
+		}
+	],
+	"QCustomSlideMenu": [
+			{
+			"name": "leftMenuContainer",
+			"defaultSize": [{
+				"width": 55,
+				"height": "auto"
+			}],
+			"collapsedSize": [{
+				"width": 55,
+				"height": "parent"
+			}],
+			"expandedSize": [{
+				"width": 230,
+				"height": "parent"
+			}],
+			"toggleButton": [{
+				"buttonName": "menuBtn",
+				"icons": [{
+					"whenMenuIsCollapsed": ":/icons/icons/align-justify.svg",
+					"whenMenuIsExpanded": ":/icons/icons/align-left.svg"
+				}]
+			}],
+			"menuTransitionAnimation": [{
+				"animationDuration": 500,
+				"animationEasingCurve": "Linear"
+			}]
+			},
+			{
+			"name": "centerMenuContainer",
+			"defaultSize": [{
+				"width": 0,
+				"height": "auto"
+			}],
+			"collapsedSize": [{
+				"width": 0,
+				"height": "auto"
+			}],
+			"expandedSize": [{
+				"width": 200,
+				"height": "parent"
+			}],
+			"menuTransitionAnimation": [{
+				"animationDuration": 500,
+				"animationEasingCurve": "Linear"
+			}]
+			},
+			{
+			"name": "rightMenuContainer",
+			"defaultSize": [{
+				"width": 0,
+				"height": "auto"
+			}],
+			"collapsedSize": [{
+				"width": 0,
+				"height": "parent"
+			}],
+			"expandedSize": [{
+				"width": 200,
+				"height": 600
+			}],
+			"menuTransitionAnimation": [{
+				"animationDuration": 500,
+				"animationEasingCurve": "Linear"
+			}],
+			"floatPosition": [
+				{
+					"relativeTo": "mainBodySubContainer",
+					"position": "center-right",
+					"shadow":[
+						{
+							"color": "#000",
+							"blurRadius": 20,
+							"xOffset": 0,
+							"yOffset": 0
+						}
+					]
+				}
+			]
+			}
+		],
+		"QStackedWidget":[
+			{
+				"name":"centerStackedWidgets",
+				"navigation":[
+					{
+						"navigationButtons":[
+							{
+								"homeBtn": "homePage",
+								"ExperimentBtn": "ExperimentPage",
+								"DigitalTwinBtn": "dtPage"
+							}
+						]
+					}
+				]
+		
+			},
+			{	
+				"name":"rightStackWidgets",
+				"navigation":[
+					{
+						"navigationButtons":[
+							{
+								"rightContainerBtn": "profilePage"
+							}
+						]
+					}
+				]
+		
+			},
+			{	
+				"name":"MenuStackedWidgets",
+				"navigation":[
+					{
+						"navigationButtons":[
+							{
+								"settingBtn": "settingPage",
+								"infoBtn": "infoPage",
+								"helpBtn": "helpPage"
+							}
+						]
+					}
+				]
+		
+			}
+		],
+		"QPushButtonGroup": [{
+			"Buttons": [
+				"homeBtn",
+				"ExperimentBtn",
+				"DigitalTwinBtn",
+				"settingBtn",
+				"helpBtn",
+				"infoBtn"
+			],
+			"Style":[{
+				"Active": "background-color: #1f232a;",
+				"NotActive": "background-color: transparent;"
+			}]
+		}]
+
+
+}
