@@ -1,3 +1,4 @@
 # pyqt5_Dashboard
 How it looks like:
-![Image](overview.png?raw=true "Title")
+
+<img src="./overview.PNG" width="600"/>
